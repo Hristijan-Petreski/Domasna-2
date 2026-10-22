@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="domasna2-css.css">
+        <title>DOMASNA 1</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#spalna">Spalna</a></li>
+                <li><a href="#dnevna">Dnevna</a></li>
+                <li><a href="#kujna">Kujna</a></li>
+                <li><a href="#gradina">Gradina</a></li>
+                <li><a href="#notifikacii">Notifikacii</a></li>
+            </ul>
+        </nav>
+
+        <h1>Kontrolen panel za pameten dom</h1>
+
+        <section id="spalna">
+            <h2>Spalna</h2>
+
+            <h3>Temperatura</h3>
+            <p>Podatok: <input type="number" value="22" min="19" max="26"> °C</p>
+            <p>Status: Vklucen</p>
+            <p>Baterija: 90%</p>
+
+            <h3>Vlaznost</h3>
+            <table border="1">
+                <tr>
+                    <th>Vrednost</th>
+                    <th>Status</th>
+                    <th>Baterija</th>
+                </tr>
+                <tr>
+                    <td>45%</td>
+                    <td>Vklucen</td>
+                    <td>92%</td>
+                </tr>
+            </table>
+
+            <h3>Potrosuvacka</h3>
+            <p>Podatok: 450 W</p>
+            <p>Status: Vklucen</p>
+            <p>Baterija: 78%</p>
+        </section>
+
+        <section id="dnevna">
+            <h2>Dnevna</h2>
+
+            <h3>Temperatura</h3>
+            <p>Podatok: <input type="number" value="27" min="19" max="26"> °C</p>
+            <p>Status: Vklucen</p>
+            <p>Baterija: 81%</p>
+
+            <h3>Vlaznost</h3>
+            <table border="1">
+                <tr>
+                    <th>Vrednost</th>
+                    <th>Status</th>
+                    <th>Baterija</th>
+                </tr>
+                <tr>
+                    <td>60%</td>
+                    <td>Vklucen</td>
+                    <td>88%</td>
+                </tr>
+            </table>
+
+            <h3>Potrosuvacka</h3>
+            <p>Podatok: 800 W</p>
+            <p>Status: Vklucen</p>
+            <p>Baterija: 90%</p>
+        </section>
+
+        <section id="kujna">
+            <h2>Kujna</h2>
+
+            <h3>Temperatura</h3>
+            <p>Podatok: <input type="number" value="24" min="19" max="26"> °C</p>
+            <p>Status: Vklucen</p>
+            <p>Baterija: 94%</p>
+
+            <h3>Vlaznost</h3>
+            <table border="1">
+                <tr>
+                    <th>Vrednost</th>
+                    <th>Status</th>
+                    <th>Baterija</th>
+                </tr>
+                <tr>
+                    <td>96%</td>
+                    <td>Vklucen</td>
+                    <td>85%</td>
+                </tr>
+            </table>
+
+            <h3>Potrosuvacka</h3>
+            <p>Podatok: 1550 W</p>
+            <p>Status: Vklucen</p>
+            <p>Baterija: 79%</p>
+        </section>
+
+        <section id="gradina">
+            <h2>Gradina</h2>
+
+            <h3>Temperatura</h3>
+            <p>Podatok: <input type="number" value="-5"> °C</p>
+            <p>Status: Vklucen</p>
+            <p>Baterija: 83%</p>
+
+            <h3>Vlaznost</h3>
+            <table border="1">
+                <tr>
+                    <th>Vrednost</th>
+                    <th>Status</th>
+                    <th>Baterija</th>
+                </tr>
+                <tr>
+                    <td>28%</td>
+                    <td>Vklucen</td>
+                    <td>91%</td>
+                </tr>
+            </table>
+
+            <h3>Potrosuvacka</h3>
+            <p>Podatok: 300 W</p>
+            <p>Status: Vklucen</p>
+            <p>Baterija: 86%</p>
+        </section>
+
+        <section id="notifikacii">
+            <h2>Notifikacii</h2>
+
+            <h3>Opsti pravila</h3>
+            <ul>
+                <li>Temperaturata vo site prostorii osven vo gradinata treba da bide od 19 do 26 °C.</li>
+                <li>Za temperaturata vo gradinata nema ogranicuvanje.</li>
+                <li>Vlaznosta treba da bide od 30% do 95%.</li>
+                <li>Potrosuvackata treba da bide od 0 do 1500 W.</li>
+            </ul>
+
+            <h3>Izvestuvanja (mock up)</h3>
+
+            <details open>
+                <summary>Notifikacii za temperatura</summary>
+                <p>Dnevnata: temperaturata e 27 °C, nad dozvolenite 26 °C.</p>
+            </details>
+
+            <details>
+                <summary>Notifikacii za vlaznost</summary>
+                <ul>
+                    <li>Kujna: vlaznosta e 96%, nad dozvolenite 95%.</li>
+                    <li>Gradina: vlaznosta e 28%, pod dozvolenite 30%.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Notifikacii za potrosuvacka</summary>
+                <p>Kujna: potrosuvackata e 1550 W, nad dozvolenite 1500 W.</p>
+            </details>
+        </section>
+    </body>
+</html>
